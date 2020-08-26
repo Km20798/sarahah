@@ -9,8 +9,8 @@ import { Router } from '@angular/router';
 export class UserService {
 
   users:User[]=[
-    {name:"Karim Mohamed" , username:"Karim@Sarahah.com" , email:"kmaged207@gmail.com" , password:"kokokoko"},
-    {name:"Mustafa Mohamed" , username:"Mustafa@Sarahah.com" , email:"mustafa@gmail.com" , password:"kokokoko"}
+    {name:"Karim Mohamed" , username:"Karim@Sarahah.com" , email:"kmaged207@gmail.com" , password:"12345678"},
+    {name:"Mustafa Mohamed" , username:"Mustafa@Sarahah.com" , email:"mustafa@gmail.com" , password:"12345678"}
   ];
 
   constructor(private router:Router) { }
