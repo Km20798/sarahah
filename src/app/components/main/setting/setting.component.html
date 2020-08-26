@@ -1,0 +1,99 @@
+<div class="main">
+  <div class="slidebar">
+    <ul>
+      <li class="tittle">Setting</li>
+      <li [ngClass]="{active: personal === true}"><button (click)= "getPersonal()">Personal Information</button></li>
+      <li [ngClass]="{active: password === true}"><button (click)= "getPassword()">Password</button></li>
+      <li [ngClass]="{active: removeAccount === true}"><button (click)= "getRemove()">Remove Account</button></li>
+      <li><button (click)= "getMessage()">Back to messages</button></li>
+    </ul>
+  </div>
+  <div class="work">
+    <div  *ngIf="removeAccount">
+      <h2>Remove account</h2>
+      <div class="noto">
+        <p>You can choose to stop receiving sarahahs by closing your inbox</p>
+        <div class="btns">
+          <button class="inbox">Close Inbox</button>
+          <button class="remove" (click)="deleteUser()">Remove Account</button>
+        </div>
+      </div>
+    </div>
+    <div class="personal" *ngIf="personal">
+      <h4>Profile</h4>
+      <hr>
+      <div>
+        <form class="form f1" >
+          <table>
+            <tr>
+              <th><Label>Name</Label></th>
+              <td><input type="text" name="name" [(ngModel)]="user.name" placeholder="Enter Your Name"></td>
+            </tr>
+            <br>
+            <tr>
+              <th><Label>Email</Label></th>
+              <td><input type="text" name="email" [(ngModel)]="user.email" disabled placeholder="Enter Your Email"></td>
+            </tr>
+          </table>
+        </form>
+        <br><br>
+        <h4>Privacy</h4>
+        <hr>
+        <div>
+          <form class="form">
+            <table>
+              <tr>
+                <th><Label>Receive sarahahs from</Label></th>
+                <td>
+                  <select>
+                    <option value="">AnyBody</option>
+                    <option value="">No One</option>
+                  </select>
+                </td>
+              </tr>
+              <br>
+              <tr>
+                <th><Label>Tailor ads to my interest</Label></th>
+                <td><input type="checkbox" style="margin-left: -50%;"></td>
+              </tr>
+              <br>
+              <tr>
+                <th><button class="save" (click)="updateUser()">save</button></th>
+                <td></td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="password" *ngIf="password">
+      <h4>Change password</h4>
+      <hr>
+      <div>
+        <form class="form ">
+          <table>
+            <tr>
+              <th><Label>Current Password</Label></th>
+              <td><input type="password" name="currentPassword" [(ngModel)]="currentPassword" placeholder="Enter Your Current Password"></td>
+            </tr>
+            <br>
+            <tr>
+              <th><Label>New Password</Label></th>
+              <td><input type="password" name="newPassword" [(ngModel)]="newPassword" placeholder="Enter Your New Password"></td>
+            </tr>
+            <br>
+            <tr>
+              <th><Label>New Password Confirmation</Label></th>
+              <td><input type="password" name="confirmPassword" [(ngModel)]="confirmPassword" placeholder="Enter New Password Confirmation"></td>
+            </tr>
+            <br>
+              <tr>
+                <th><button class="save" (click)="changePassword()">Change</button></th>
+                <td></td>
+              </tr>
+          </table>
+        </form>
+    </div>
+  </div>
+</div>

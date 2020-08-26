@@ -1,0 +1,113 @@
+.main{
+  margin-top: 8%;
+  margin-left: 5%;
+}
+.slidebar{
+  float: left;
+  width: 20%;
+  margin-left: 10%;
+}
+ul{
+  border: 1px solid #c3bcbc ;
+  list-style: none;
+  padding: 0px;
+}
+.tittle{
+  text-align: left  ;
+}
+li{
+  border-bottom: 1px solid #c3bcbc;
+  padding: 10px 10px;
+  width: 100%;
+  text-align: center;
+}
+.active{
+  background-color: #d0cccb;
+}
+button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+button:hover{
+  color: #10bbb3;
+}
+button:focus{
+  outline: none;
+}
+.work{
+  float: left;
+  margin-left: 5%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 60%;
+  padding: 1% 2%;
+}
+.form{
+  text-align: -webkit-center;
+  margin-bottom: 5%;
+}
+.form input , select{
+  width: 150%;
+  border-radius: 5px;
+  padding: 4px;
+  border: 1px solid gray;
+  padding-left: 10px ;
+}
+.f1 input{
+  width: 185%;
+}
+input:focus , select:focus{
+  outline: none;
+}
+.save{
+  border: 1px solid;
+  margin-left: 7%;
+  padding: 10px 40px;
+  color: #10bbb3;
+  background-color: white;
+  border-color: #10bbb3;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.save:focus{
+  outline: none;
+  border: none;
+}
+.save:hover{
+  background-color: #10bbb3;
+  color: white;
+}
+.noto{
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #31708f;
+  padding: 20px 0px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 5% 0%;
+}
+.inbox{
+  background-color: #10bbb3;
+  padding: 8px 10px;
+  color: white;
+  font-size: 12px;
+}
+.inbox:hover{
+  background-color: #10bbb3;
+  padding: 8px 10px;
+  color: white;
+  font-size: 12px;
+}
+.remove{
+  color: #aa4a24;
+  background-color: transparent;
+  font-size: 12px;
+  padding: 7px 10px;
+  border: 1px solid #aa4a24;
+  margin-left: 1%;
+}
+.remove:hover{
+  color: white;
+  background-color: #aa4a24;
+}

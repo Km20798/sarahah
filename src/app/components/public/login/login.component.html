@@ -1,0 +1,28 @@
+<app-public-header></app-public-header>
+<main>
+  <section>
+    <div class="logo">
+      <img src="../../../../assets/Images/user.png" alt="">
+      <h2>Login</h2>
+    </div>
+    <div class="loginForm">
+      <div class="error" *ngIf="err">
+        <h4>Invaild User</h4>
+      </div>
+      <form (ngSubmit)="login()">
+        <input type="text" class="form-input" name="email" [(ngModel)]="email" placeholder="Enter Your Username"><br>
+        <input type="password" class="form-input" name="password" [(ngModel)]="password" placeholder="Enter Your Password">
+        <br>
+        <input type="checkbox" class="check"><label>Remember me</label>
+        <button>Login</button>
+        <br><br>
+        <button class="facebook">Login With Facebook</button>
+      </form>
+      <br>
+      <a href="">I Forgot My Password</a>
+      <br><br>
+      <a routerLink="/register"><button class="reg">Register</button></a>
+    </div>
+  </section>
+</main>
+<app-public-footer></app-public-footer>

@@ -1,0 +1,104 @@
+main{
+  margin-top: 5%;
+  text-align: center;
+}
+section{
+  text-align: -webkit-center !important;
+}
+img{
+  width: 50px;
+}
+h2{
+  margin-top: 0;
+  color: #20bbb3;
+}
+.loginForm{
+  border-radius: 10px;
+  box-shadow: 1px 1px 27px #588694;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc4c4;
+  margin-top: 5px;
+  width: 40%;
+}
+.form-input{
+  outline: none;
+  border: 1.5px solid #b5b3b3;
+  padding: 10px;
+  width: 60%;
+  margin-top: 3%;
+  border-radius: 7px;
+  padding-left: 20px;
+}
+
+.form-input:focus{
+  outline: none;
+  border: 1.5px solid;
+  border-color: #b0cac9;
+}
+.check{
+  margin-top: 5%;
+  margin-left: 0%;
+}
+.check:focus{
+  border-color: #b0cac9;
+}
+button{
+  margin-left: 7%;
+  padding: 10px 40px;
+  color: #10bbb3;
+  background-color: white;
+  border-color: #10bbb3;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #10bbb3;
+  color: white;
+}
+button:focus{
+  outline: none;
+}
+.facebook{
+  margin-left: -5%;
+  padding: 10px 30px;
+  color: white;
+  background-color: #4267b2;
+  border: none;
+  border-radius: 4px;
+  font-size: 10px;
+}
+.facebook:focus{
+  border: none;
+  outline: none;
+}
+.facebook:hover{
+  color: white;
+  background-color: #4267b2;
+}
+a{
+  text-decoration: none;
+  color: #9da9b0;
+  margin-left: -5%;
+}
+a:hover{
+  color: #10bbb3;
+}
+.reg{
+  margin-left: 0%;
+  padding:10px 10px ;
+  width: 40%;
+}
+button>a{
+  color: #10bbb3;
+}
+button>a:hover{
+  color: white;
+}
+.error{
+  width: 60%;
+  border-radius: 5px;
+  padding:  5px;
+  color: wheat;
+  background: #ff000094;
+}

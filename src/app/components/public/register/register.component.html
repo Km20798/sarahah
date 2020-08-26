@@ -1,0 +1,74 @@
+<app-public-header></app-public-header> 
+<main>
+  <section>
+    <div class="logo">
+      <div class="logo">
+        <img src="../../../../assets/Images/user.png" alt="">
+        <h2>Register</h2>
+      </div>
+      <div class="form">
+        <form (ngSubmit)="register()">
+          <table>
+            <tr>
+              <th>
+                <label for="name">Name</label>
+              </th>
+              <td>
+                <input type="text" name="name" [(ngModel)]="user.name" class="" id="name">
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="username">Username</label>
+              </th>
+              <td>
+                <input type="text" class="username" name="username" [(ngModel)]="user.username" id="username"><label class="user">@Sarahah.com</label>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="email">Email</label>
+              </th>
+              <td>
+                <input type="text" class="" name="email" [(ngModel)]="user.email" id="email">
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="password">Password</label>
+              </th>
+              <td>
+                <input type="password" class="" name="password" [(ngModel)]="user.password" id="password">
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="configpassword">Password Confirmation</label>
+              </th>
+              <td>
+                <input type="password" name="password" [(ngModel)]="password" class="" id="configpassword">
+              </td>
+            </tr>
+            <tr>
+              <th></th>
+              <td class="td1">
+                <input type="checkbox" class="check1"><p class="para1">Notifications</p>
+              </td>
+            </tr>
+            <tr>
+              <th></th>
+              <td class="td1">
+                <input type="checkbox" class="check1"><p class="para2">I am at least 17 years old and have read and accepted the terms and conditions</p>
+              </td>
+            </tr>
+            <tr>
+              <th> </th>
+              <td><button class="regbtn">Register</button></td>
+            </tr>
+          </table>          
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<app-public-footer></app-public-footer>
